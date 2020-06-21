@@ -1,7 +1,7 @@
 #############################################################
 ## 인공지능과 기계학습
 ##  조이름  : 소심조 (1조)
-##  작품명  : 초록이
+##  작품명  : 초록안전 시스템
 ## 작품설명 : 보행자를 인식하여 가까이 오면 경고음을 발생
 ## 실행환경 : Python 3.7.7
 ##            CUDA 10.1
@@ -93,7 +93,7 @@ def cvDrawBoxes(detections, img):
 	#=================================================================
     	# 3.3 Purpose : 정보 표시
     	#=================================================================        
-        text_detect = "Detect object : %s" % str(len(detections)        # 전체 감지된 숫자 
+        text_detect = "Detect object : %s" % str(len(detections))        # 전체 감지된 숫자 
         text_people = "Detect People : %s" % str(len(centroid_dict))    # 감지된 보행자 숫자
         text_near = "Detect Near People : %s" % str(len(red_zone_list)) # 가까운 곳에 있는 보행자 숫자
         # 문자열 생성 위치
